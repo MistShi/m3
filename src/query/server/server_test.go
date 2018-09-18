@@ -68,6 +68,7 @@ clusters:
         retention: 48h
 `
 
+//TODO: Use randomly assigned port here
 func TestRun(t *testing.T) {
 	ctrl := gomock.NewController(xtest.Reporter{T: t})
 	defer ctrl.Finish()
